@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #97c9ff, #356a9f);
+    font-family: Cascadia Code;
+}
+
+/*! Preloader config */
+.preloader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(214, 210, 210);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preloader .fade-out {
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.preloader .box {
+    width: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.preloader .box div {
+    height: 15px;
+    width: 15px;
+    background-color: #356a9f;
+    border-radius: 50%;
+    animation: loaderAni 1s ease infinite;
+}
+
+.preloader .box div:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.preloader .box div:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+/*! animation */
+@keyframes loaderAni {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+/*? nav config */
+.header a {
+    text-decoration: none;
+}
+
+.header {
+    padding: 10px 10%;
+    background-color: rgb(183, 183, 183, 0.3);
+}
+
+.logo {
+    font-size: 30px;
+    color: #356a9f;
+    cursor: pointer;
+    font-family: "Pricedown";
+}
+
+/*? About Config  */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px auto;
+    max-width: 900px;
+    width: 100%;
+    min-height: 570px;
+    height: auto;
+    background-color: rgb(212, 212, 212);
+    border-radius: 20px;
+}
+
+.about-info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 130px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.about-info h2 {
+    font-family: "Pricedown";
+    font-size: 35px;
+    color: #24252A;
+}
+
+.about-info p {
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.how-to {
+    height: 300px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.how-to h3 {
+    font-size: 30px;
+    font-family: "Pricedown";
+    color: #24252A;
+}
+
+.how-to p {
+    margin: 10px 0px;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.get-started {
+    margin: 20px 0px;
+    padding: 15px 30px;
+    border-radius: 25px;
+    background-color: #0060a9;
+    color: #24252A;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.get-started a {
+    text-decoration: none;
+    color: #24252A;
+}
+
+.get-started:hover {
+    background-color: #356a9f;
+    transition: all .5s ease-in-out;
+}
