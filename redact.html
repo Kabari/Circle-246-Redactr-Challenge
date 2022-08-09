@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redactr</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!--! Preloader Animation start -->
+  <div class="preloader">
+    <div class="box">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!--! Preloader Animation end -->
+
+  <!--! Redact Form and Result Start -->
+  <section class="redact-box">
+    <!--! Redactr Form Start -->
+    <section class="redact-form">
+
+      <div class="redact-container">
+        <div class="redact-title">Redactr</div>
+
+        <form action="" method="post">
+
+          <div class="content-box">
+            <span class="details">Enter </span>
+            <!-- <input type="text" placeholder="Enter/Paste the text to be redacted" required> -->
+            <textarea name="content-text" id="content-text" placeholder="Enter/Paste the text to be redacted"
+              required></textarea>
+          </div>
+
+          <div class="word-box">
+            <span class="details">Words to be redacted</span>
+            <input type="text" placeholder="Enter the words to be redacted seperated by space(s)" required>
+          </div>
+
+          <div class="symbol-box">
+            <span class="details">Redacting Symbol</span>
+            <input type="text" placeholder="Enter the preferred symbol" required>
+          </div>
+
+          <div class="button">
+            <button class="redact-btn" type="button" value="Redact Now">Redact Now</button>
+            <button class="clear-btn" type="button" value="Clear">Clear</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+    <!--! Redactr Form End -->
+
+    <!--! Redact Result Start -->
+    <section class="redact-result">
+      <div class="result-container">
+        <div class="result-title">Result</div>
+      </div>
+      <div class="result-box">
+        <textarea name="result-text" id="result-text"></textarea>
+        <div class="button" id="button">
+          <button id="clear-btn" type="button" value="Clear">Clear</button>
+        </div>
+      </div>
+    </section>
+    <!--! Redact Result End -->
+
+  </section>
+  <!--! Redact Form and Result End -->
+
+</body>
+
+</html>
