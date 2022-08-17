@@ -3,7 +3,7 @@ import startApp from './app.mjs';
 document.addEventListener('DOMContentLoaded', startApp);
 
 // ? Selecting the buttons
-const redactButton = document.querySelector(".redact-btn");
+const redactButton = document.querySelector("#redact-btn");
 const clearButton = document.querySelector(".clear-btn");
 const clearRedactResult = document.querySelector("#clear-btn");
 

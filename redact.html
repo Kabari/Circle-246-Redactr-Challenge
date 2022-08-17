@@ -47,16 +47,17 @@
 
           <div class="word-box">
             <span class="details">Words to be redacted</span>
-            <input type="text" placeholder="Enter the words to be redacted seperated by space(s)" required>
+            <input id="word-box" type="text" placeholder="Enter the words to be redacted seperated by space(s)"
+              required>
           </div>
 
           <div class="symbol-box">
             <span class="details">Redacting Symbol</span>
-            <input type="text" placeholder="Enter the preferred symbol" required>
+            <input id="symbol-box" type="text" placeholder="Enter the preferred symbol" required>
           </div>
 
           <div class="button">
-            <button class="redact-btn" type="button" value="Redact Now">Redact Now</button>
+            <button class="redact-btn" id="redact-btn" type="button" value="Redact Now">Redact Now</button>
             <button class="clear-btn" type="button" value="Clear">Clear</button>
           </div>
 
@@ -71,7 +72,7 @@
         <div class="result-title">Result</div>
       </div>
       <div class="result-box">
-        <textarea name="result-text" id="result-text"></textarea>
+        <textarea name="result-text" id="result-text" readonly></textarea>
         <div class="button" id="button">
           <button id="clear-btn" type="button" value="Clear">Clear</button>
         </div>
