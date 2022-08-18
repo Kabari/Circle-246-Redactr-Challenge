@@ -16,7 +16,7 @@ clearButton.addEventListener("click", () => {
   clearScreen();
 });
 
-clearRedactResult.addEventListener("", () => {
+clearRedactResult.addEventListener("click", () => {
   clearResult();
 });
 
@@ -33,14 +33,9 @@ function redactNow() {
   let scrambleSymbol = replaceSymbol.value;
   scrambleSymbol = scrambleSymbol || "*";
 
-  console.log(text);
-  console.log(wordsToRedact);
-  console.log(scrambleSymbol);
-
   wordsToRedact = wordsToRedact.toLowerCase().trim();
   let dividedOriginalText;
   let firstWord = text.toLowerCase().split(" ")[0];
-  console.log(wordsToRedact);
 
   for (let index in wordsToRedact) {
     if (firstWord === wordsToRedact[index]) {
@@ -73,6 +68,8 @@ function redactNow() {
   const redactedTextContent = dividedOriginalText.join(" ");
 
   renderRedactedText(redactedTextContent);
+
+
 }
 
 // ? Rendering the redacted text
@@ -95,5 +92,5 @@ function clearScreen() {
 // ? clear result box
 function clearResult() {
   const redactResult = document.querySelector("#result-text");
-  redactResult.innerText = "";
+  redactResult.textContent = "";
 }
