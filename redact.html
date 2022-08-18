@@ -29,25 +29,24 @@
   <!-- ! Header end -->
 
   <!--! Redact Form and Result Start -->
-  <section class="redact-box">
-    <!--! Redactr Form Start -->
-    <section class="redact-form">
+  <section class="redact-main">
+    <section class="redact-box">
+      <!--! Redactr Form Start -->
 
-      <div class="redact-container">
+      <section class="redact-container">
         <div class="redact-title">Redactr</div>
 
         <form action="" method="post">
 
           <div class="content-box">
             <span class="details">Enter </span>
-            <!-- <input type="text" placeholder="Enter/Paste the text to be redacted" required> -->
             <textarea name="content-text" id="content-text" placeholder="Enter/Paste the text to be redacted"
               required></textarea>
           </div>
 
           <div class="word-box">
-            <span class="details">Word to be redacted</span>
-            <input id="word-box" type="text" placeholder="Enter the word to be redacted" required>
+            <span class="details">Words to be redacted</span>
+            <input id="word-box" type="text" placeholder="Enter the words to be redacted" required>
           </div>
 
           <div class="symbol-box">
@@ -56,29 +55,28 @@
           </div>
 
           <div class="button">
-            <button class="redact-btn" id="redact-btn" type="button" value="Redact Now">Redact Now</button>
+            <button class="redact-btn" type="button" value="Redact Now">Redact Now</button>
             <button class="clear-btn" type="button" value="Clear">Clear</button>
           </div>
 
         </form>
-      </div>
-    </section>
-    <!--! Redactr Form End -->
+      </section>
+      <!--! Redactr Form End -->
 
-    <!--! Redact Result Start -->
-    <section class="redact-result">
-      <div class="result-container">
+      <!--! Redact Result Start -->
+      <section class="result-container">
         <div class="result-title">Result</div>
-      </div>
-      <div class="result-box">
-        <textarea name="result-text" id="result-text" readonly></textarea>
-        <div class="button" id="button">
-          <button id="clear-btn" type="button" value="Clear">Clear</button>
-        </div>
-      </div>
-    </section>
-    <!--! Redact Result End -->
 
+        <div class="result-box">
+          <textarea name="result-text" id="result-text"></textarea>
+          <div class="button" id="button">
+            <button id="clear-btn" type="button" value="Clear">Clear</button>
+          </div>
+        </div>
+      </section>
+      <!--! Redact Result End -->
+
+    </section>
   </section>
   <!--! Redact Form and Result End -->
 
