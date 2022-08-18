@@ -171,7 +171,6 @@ body {
     margin: 10px auto;
     width: 1400px;
     min-height: auto;
-    border: 1px solid red;
 }
 
 .redact-container {
@@ -342,7 +341,6 @@ input:valid {
 
 
 /* ! Media Queries */
-
 @media screen and (max-width: 1031px) {
     .about {
         margin: 60px auto;
@@ -400,7 +398,7 @@ input:valid {
     }
 }
 
-@media (min-width: 1032px) and (max-width:1439px) {
+@media (min-width: 1032px) and (max-width: 1439px) {
     .redact-box {
         width: 1032px;
         flex-direction: row;
